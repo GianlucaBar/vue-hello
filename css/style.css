@@ -4,10 +4,44 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-color: #31475E;
+}
+
+h1{
+    color: #3FB27F;
+    font-size: 40px;
+}
+
+button{
+    padding: 20px;
+    font-size: 20px;
+}
+
 img{
     display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .block{
     display: block;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
 }
