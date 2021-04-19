@@ -20,6 +20,6 @@ var app = new Vue(
                 }
             }
         }
-        // test
+        
     });
 
